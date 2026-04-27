@@ -1,0 +1,22 @@
+# express
+# mssql
+# bcryptjs
+# jsonwebtoken
+# cors
+# dotenv
+# multer
+# uuid
+# nodemo
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+sqlalchemy==2.0.30
+pyodbc==5.1.0
+python-dotenv==1.0.1
+python-multipart==0.0.9
+pillow==10.3.0
+pydantic==2.7.1
+pydantic-settings==2.2.1
+alembic==1.13.1
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+email-validator==2.1.1n
