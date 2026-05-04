@@ -67,7 +67,7 @@ from app.api.v1.endpoints import (
 )
 
 # ✅ Create tables (safe)
-Base.metadata.create_all(bind=engine)
+# Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
