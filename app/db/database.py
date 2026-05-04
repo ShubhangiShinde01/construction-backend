@@ -40,7 +40,10 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 
 engine = create_engine(
     DATABASE_URL,
-    pool_pre_ping=True
+    pool_pre_ping=True,
+    pool_recycle=300,          # recycle connections every 5 mins
+    connect_args={"connect_timeout": 10}
+    
 )
 
 SessionLocal = sessionmaker(
@@ -61,7 +64,7 @@ def get_db():
 
 
 
-        
+
 # ```
 
 # ---
